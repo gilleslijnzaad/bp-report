@@ -26,7 +26,7 @@ The title is fully capitalized, but use 14-pt capitals (or use `small caps') whe
 Content words in the title must begin with a capital letter (`title caps').
 Leave 3 points of empty space under the title.
 
-The title is followed by the name of the author(s), with the student number(s) after the name.
+The title is followed by the name of the author, with the student number after the name.
 Note: remove the student number from the final version that you upload to the repository.
 Leave 6 points before the title, and 12 points after the last line.
 This is followed by the abstract.
@@ -69,17 +69,16 @@ Also check that tremas and accents, when required, are used correctly.
 Italics are used for words from other languages (except for terms that have become commonplace), Latin abbreviations, new terminology/concepts and for emphasis.
 Short quotes may also be italicized.
 Quotes must be placed between quotation marks.
-Make sure that you use opening and closing quotation marks correctly, i.e.\ `correct' and 'not correct' and ``also correct'' and ''wrong again''.
+Make sure that you use opening and closing quotation marks correctly, i.e.\ `correct' and `not correct' and ``also correct''.
 
 The short dash - (hyphen) is used to join words or to separate the syllables of a word.
-The `en dash' is used as a minus sign and to indicate series of numbers ($-1$, $2 - 5$).
-The `em-dash' --- is used as a pause or parenthesis.
+The `en dash' is used as a minus sign and to indicate series of numbers.
 
 Numbers are best presented using modified American notation, i.e.\ points are used where a comma would be used in Dutch, and vice versa.
 One and a half is therefore written as 1.5 and not as 1,5.
 Scientific notation should be used for large numbers: \SI{6.022e-23}.
-If necessary, spaces are used to separate large numbers into groups of three digits: $4 \; 294 \; 967 \; 296$.
-This also works after the decimal point: $3.141 \; 592 \; 653 \; 589 \; 79$.
+If necessary, spaces are used to separate large numbers into groups of three digits.
+This also works after the decimal point.
 
 \subsection{Formulae}\label{sec:_formulae}
 Formulae must be written in the current notations used in mathematics, logic and physics.
@@ -107,33 +106,8 @@ Blocks of code are indented, and conclude with end and the relevant control word
 
 When pseudo code is used, an explanatory caption must be included above the code.
 The caption should be 9 pt bold and begin with `Algorithm' followed by the section number and the number of the algorithm within the section.
-The reference to it in the text is `see algorithm~\ref{alg:some_algorithm}'.
+The reference to it in the text is.
 
-% see https://en.wikibooks.org/wiki/LaTeX/Algorithms_and_Pseudocode
-\begin{algorithm}[h]
-\caption{Calculate $y = x^n$}\label{alg:some_algorithm}
-\begin{algorithmic}
-\REQUIRE $n \geq 0 \vee x \neq 0$
-\ENSURE $y = x^n$
-\STATE $y \Leftarrow 1$
-\IF{$n < 0$}
-\STATE $X \Leftarrow 1 / x$
-\STATE $N \Leftarrow -n$
-\ELSE
-\STATE $X \Leftarrow x$
-\STATE $N \Leftarrow n$
-\ENDIF
-\WHILE{$N \neq 0$}
-\IF{$N$ is even}
-\STATE $X \Leftarrow X \times X$
-\STATE $N \Leftarrow N / 2$
-\ELSE[$N$ is odd]
-\STATE $y \Leftarrow y \times X$
-\STATE $N \Leftarrow N - 1$
-\ENDIF
-\ENDWHILE
-\end{algorithmic}
-\end{algorithm}
 
 \subsection{Figures}\label{sec:_figures}
 Figures must be comprehensible and the text they contain must be clearly legible.
@@ -158,7 +132,7 @@ Figures should be placed as close as possible to the first reference to them.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\linewidth]{img/grafiek.png}
-  \caption{Graph of the function $sin(x) \cdot sin(y)$.
+  \caption{Graph of the function \(\sin(x) \cdot \sin(y)\).
     This figure is a bitmap, but of sufficiently high quality to be acceptable.
     Take note of the legible axes and labels.
   }\label{fig:afb1}
@@ -206,8 +180,3 @@ To make it easier for your readers to access your references, please provide DOI
 It is important to avoid references to vague sources as far as possible.
 It is best to avoid sources that are \emph{in press} or \emph{unpublished manuscripts}.
 For online resources which are not articles, always provide a \emph{complete and permanent URL} and mention the time you accessed them.
-
-In the text articles are referred to with the name(s) of the author(s) and the year \citep{dawkins76}.
-If the source has two authors, the names are separated by an ampersand \citep{berrah99} but if there are three or more authors, ‘et al.’ is used\citep{schwartz97}.
-A reference may include several sources \citep{cooper52, Crothers78} or even more than one paper by the same author \citep{Kirby98, Kirby99, Kirby00, Oliphant93, Oliphant96}.
-Note the use of commas and semi-colons.
