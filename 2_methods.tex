@@ -1,7 +1,7 @@
 % !TEX root = thesis.tex
 
 \section{Methods}\label{sec:methods}
-Following \cite{Unni2017} an \(n\)-back task with five levels (\(n = 0,1,2,3,4\)) was used to manipulate working memory load. 
+Following~\cite{Unni2017} an \(n\)-back task with five levels (\(n = 0,1,2,3,4\)) was used to manipulate working memory load. 
 This task was integrated into the driving task by means of speed regulation. 
 The designed environment also had an additional working memory constraint: a construction site with narrower lanes.  
 
@@ -28,8 +28,6 @@ The lanes were separated by a full yellow line and were narrower than the non-co
 
 Speed signs that passed were identical to general speed signs in The Netherlands; black digits enclosed by a red circle. 
 
-%TODO [include screenshot] screenshot should show the autocar, atleast 1 blinker active, and a visible speed sign
-
 % explain n-back task
 Within each trial the participants were presented with at least nine speed signs at intervals of 20 seconds, with the exception of the first speed sign appearing after 5 seconds. 
 For \(n\)-back tasks with \(n > 0\), there was a build-up phase of \(n\) speed signs preceding the nine speed signs where the participant would perform the task. 
@@ -41,7 +39,7 @@ Due to a difference in length of build-up phases per \(n\)-back trial, each tria
 Participants interacted with the simulation using a steering wheel with blinkers and a throttle and brake pedal (Driving Force GT by Logitech). 
 The steering wheel was secured to the table in front of the screen and remained in the same location for all participants. 
 The pedals were placed on the floor such that participants could move it closer or further depending on their level of comfort. 
-An eye-tracking camera (EyeLink Portable Duo by SR Research), placed between the screen and the steering wheel, was used to continuously record the eye movements and pupil size of participants. 
+An eye-tracking camera (EyeLink Portable Duo, SR Research, Missisauga, Canada), placed between the screen and the steering wheel, was used to continuously record the eye movements and pupil size of participants. 
 
 \subsection{Experimental Procedure}
 The procedure of the current experiment follows that of \citet{Scheunemann2019}.
@@ -69,23 +67,14 @@ If the measured eye position deviated too far from the position of the target, c
 Otherwise the deviation was automatically taken into account with recording of the eye position. 
 
 \subsection{Data collection}
-Behavioral data was recorded to track the participant's driving behavior and performance on the \(n\)-back task. 
-The raw variables were recorded every 5 milliseconds. 
-To assess the participant's driving behavior, the steering angle of the steering wheel was recorded. 
-The value of this variables ranged from -1 to 1, where -1 is the steering wheel turned completely to the left, 1 turned completely to the right, and 0 is the neutral position of the steering wheel. 
-The accelerator and brake pedals also had corresponding variables ranging from 0 to 1, where 1 was the pedal being fully pressed and 0 not pressed at all. 
-The position and orientation of the participant's car and the autocar was recorded as well. 
-The car's position is used to determine driving performance in terms of lane centering. 
-The speed of the car was also recorded and used to determine the error rate of the speed regulation task. 
-The moment when a speed sign appears was also recorded, which is useful to determine when the participant is expected to change his/her speed. 
-Lastly, a variable was recorded that tracked when the blinkers were used. 
-This helps determine when a lane change was initiated and how long it took. 
+A number of different variables pertaining to driving behavior were recorded at a rate of 200 Hz. 
+The use of the accelerator and brake pedals was recorded as numbers ranging from 0 (not pressed) to 1 (fully pressed). 
+The angle of the steering wheel was recorded as a number ranging from -1 (left) to 1 (right).
+In order to measure lane centering, the position and orientation of the participant's car were recorded as [measure]. 
+Finally, the speed of the participant's car was recorded along with the occurring speed signs to calculate \(n\)-back task performance. 
 
-% Gilles
-The eye-tracker records a number of raw variables at a rate of 500 Hz.
+The eye-tracker recorded a number of raw variables at a rate of 500 Hz, two of which are relevant for the current study.
 Eye positions are measured in \(x\) and \(y\) coordinates relative to the PC monitor (\(1920 \times 1080\) px).
-Pupil dilation is measured in terms of diameter, in arbitrary units. 
-As these units differ for all participants, raw pupil dilation cannot be compared across participants. 
-Instead, it must be compared to some base-level dilation for each individual participant. 
+Pupil dilation was measured in terms of diameter in arbitrary units. 
 
-In addition to recording the raw data the eye-tracker software automatically sorts the data into fixations, saccades and blinks, removing a significant amount of noise. 
+\subsection{Data analysis}
