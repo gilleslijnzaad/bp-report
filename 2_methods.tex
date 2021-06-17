@@ -75,6 +75,32 @@ Finally, the speed of the participant's car was recorded along with the occurrin
 
 The eye-tracker recorded a number of raw variables at a rate of 500 Hz, two of which are relevant for the current study.
 Eye positions are measured in \(x\) and \(y\) coordinates relative to the PC monitor (\(1920 \times 1080\) px).
-Pupil dilation was measured in terms of diameter in arbitrary units. 
+Pupil size was measured in terms of diameter in arbitrary units. 
 
 \subsection{Data analysis}
+The raw eye-tracking data were sorted into fixations, saccades and blinks using the \texttt{eyelinker} R package\footnote{\url{https://CRAN.R-project.org/package=eyelinker}}.
+Only the fixations were used for data analysis as this eliminated a lot of noise and reduced the amount of data by around 99\%, making it much more workable.
+For both variables of interest discussed in the introduction (pupil size and fixations on the speedometer) some preprocessing was required.
+
+To properly compare pupil size, baseline correction is required. 
+According to \citet{Mathot2018} baseline correction increases statistical power by accounting for random fluctuations in pupil size over the course of an experiment.
+To this end the baseline pupil size is recalculated for each new trial.
+As a baseline period we chose the time period between the start of the trial and the appearance of the first speed sign.
+The mean pupil size during this 5 second interval was used to correct the pupil sizes of the trial.
+More specifically we have chosen to use subtractive baseline correction (\(corrected\ pupil\ size = pupil\ size - baseline\)) 
+as \citet{Mathot2018} prefer it over divisive baseline correction (\(corrected\ pupil\ size = pupil\ size / baseline\)).
+
+The analysis of fixations on the speedometer required some preprocessing as well.
+On the surface it seems fairly simple to define the speedometer as an area of interest (AOI) and count the number of fixations within that area.
+Yet, shifts in eye positions between and within participants made it impossible to universally define the bounds of this AOI.\@
+For this reason we manually determined the borders of the AOI for each participant, i.e.\ determined what ``counts as'' a fixation on the speedometer.
+Fixations on the speedometer will be expressed as a percentage of the total number of fixations during that trial to account for [reason].
+
+We will focus on three measures relating to the two variables of interest. 
+Pupil size will be examined both between and within trials.
+These two temporal contexts will provide a detailed image of how a participant's pupil size changes over time.
+Fixations on the speedometer will be examined between trials. 
+In order to test the significance of the results an ANOVA with repeated measures will be used.
+
+A number of participants was excluded from data analysis.
+5 participants were excluded because their driving behavior was not indicative of an actual attempt to perform the task.
