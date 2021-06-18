@@ -35,11 +35,12 @@ For example, for \(n = 4\), the build-up phase would be the first four speed sig
 After the build-up phase, the task of regulating speed would start. 
 Due to a difference in length of build-up phases per \(n\)-back trial, each trial differs in number of speed signs, as well time taken.
 
-% equipment and stuff
-Participants interacted with the simulation using a steering wheel with blinkers and a throttle and brake pedal (Driving Force GT by Logitech). 
+Participants interacted with the simulation using a steering wheel with blinkers and a throttle and brake pedal (Driving Force GT, Logitech, Lausanne, Switzerland). 
 The steering wheel was secured to the table in front of the screen and remained in the same location for all participants. 
 The pedals were placed on the floor such that participants could move it closer or further depending on their level of comfort. 
 An eye-tracking camera (EyeLink Portable Duo, SR Research, Missisauga, Canada), placed between the screen and the steering wheel, was used to continuously record the eye movements and pupil size of participants. 
+The method of tracking that we employed was remote tracking using a target sticker on the participant's forehead.
+This method was chosen because stabilizing the head using a head rest was not feasible considering the set-up with the steering wheel.
 
 \subsection{Experimental Procedure}
 The procedure of the current experiment follows that of \citet{Scheunemann2019}.
@@ -75,7 +76,8 @@ Finally, the speed of the participant's car was recorded along with the occurrin
 
 The eye-tracker recorded a number of raw variables at a rate of 500 Hz, two of which are relevant for the current study.
 Eye positions are measured in \(x\) and \(y\) coordinates relative to the PC monitor (\(1920 \times 1080\) px).
-Pupil size was measured in terms of diameter in arbitrary units. 
+Pupil size was measured in terms of diameter in arbitrary units.
+The eye-tracker recorded only one eye (specifically the left) as this is most common in eye-tracking experiments \citep{Hutton2019}.
 
 \subsection{Data analysis}
 The raw eye-tracking data were sorted into fixations, saccades and blinks using the \texttt{eyelinker} R package\footnote{\url{https://CRAN.R-project.org/package=eyelinker}}.
@@ -102,10 +104,10 @@ These two temporal contexts will provide a detailed image of how a participant's
 Fixations on the speedometer will be examined between trials. 
 In order to test the significance of the results we will use an ANOVA with repeated measures.
 
-A number of participants was excluded from data analysis.
+From the 38 individuals that participated in this experiment a number were excluded from data analysis.
 5 participants were excluded from the entire experiment because their driving behavior was not indicative of an actual attempt to perform the task.
-This was determined by their task error on the 0-back, which we expect to be close to zero.
+This was determined by their error rate on the 0-back task, which we expect to be close to zero.
 Therefore task error (see \citet{DeMooij2021}) was determined for 33 participants.
-For eye-tracking analysis 8 more participants were excluded as their data were either non-existent or incomplete.
+For eye-tracking analysis 8 more participants were excluded as their eye-tracking data were either non-existent or incomplete.
 This leaves us with 25 participants for eye-tracking analysis.
 Finally, for the analysis of lane deviation (see \citet{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 18 participants for analysis.
