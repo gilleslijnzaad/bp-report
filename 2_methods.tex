@@ -1,7 +1,7 @@
 % !TEX root = thesis.tex
 
 \section{Methods}\label{sec:methods}
-Following~\cite{Unni2017} an \(n\)-back task with five levels (\(n = 0,1,2,3,4\)) was used to manipulate working memory load. 
+Following~\cite{Unni2017} an \nback task with five levels (\(n = 0,1,2,3,4\)) was used to manipulate working memory load. 
 This task was integrated into the driving task by means of speed regulation. 
 The designed environment also had an additional working memory constraint: a construction site with narrower lanes.  
 
@@ -30,10 +30,10 @@ Speed signs that passed were identical to general speed signs in The Netherlands
 
 % explain n-back task
 Within each trial the participants were presented with at least nine speed signs at intervals of 20 seconds, with the exception of the first speed sign appearing after 5 seconds. 
-For \(n\)-back tasks with \(n > 0\), there was a build-up phase of \(n\) speed signs preceding the nine speed signs where the participant would perform the task. 
+For \nback tasks with \(n > 0\), there was a build-up phase of \(n\) speed signs preceding the nine speed signs where the participant would perform the task. 
 For example, for \(n = 4\), the build-up phase would be the first four speed signs. 
 After the build-up phase, the task of regulating speed would start. 
-Due to a difference in length of build-up phases per \(n\)-back trial, each trial differs in number of speed signs, as well time taken.
+Due to a difference in length of build-up phases per \nback trial, each trial differs in number of speed signs, as well time taken.
 
 Participants interacted with the simulation using a steering wheel with blinkers and a throttle and brake pedal (Driving Force GT, Logitech, Lausanne, Switzerland). 
 The steering wheel was secured to the table in front of the screen and remained in the same location for all participants. 
@@ -45,9 +45,9 @@ This method was chosen because stabilizing the head using a head rest was not fe
 \subsection{Experimental Procedure}
 The procedure of the current experiment follows that of \citet{Scheunemann2019}.
 The experiment consisted of 20 trials in total, divided by a short break into two blocks of 10 trials each. 
-Within a block, each \(n\)-back trial appeared twice: once with a construction site and once without. 
+Within a block, each \nback trial appeared twice: once with a construction site and once without. 
 The order of the trials was determined pseudorandomly with a few conditions. 
-Firstly, no \(n\)-back level could appear twice in a row. 
+Firstly, no \nback level could appear twice in a row. 
 Secondly, the construction/non-construction conditions were alternated from trial to trial. 
 These constraints on the randomization were incorporated with the aim of avoiding habituation effects for the memory task and the visuospatial demands. 
 Finally, the order of the trials in the first block was reversed to form the order of trials in the second block.
@@ -60,7 +60,7 @@ This procedure was repeated twice: once to calibrate and once to validate whethe
 Calibration was performed again in the case that the validation was inaccurate.
 
 After calibration, the experiment began. 
-Before every trial a pop-up message appeared telling the participant which \(n\)-back task they should perform in the next trial. 
+Before every trial a pop-up message appeared telling the participant which \nback task they should perform in the next trial. 
 The percentage of total trials they had already completed was also shown in the message. 
 Furthermore, every trial (excluding the very first one) was preceded by an eye-tracking drift correction. 
 This required the participant to look at a target at the center of the screen. 
@@ -72,7 +72,7 @@ A number of different variables pertaining to driving behavior were recorded at 
 The use of the accelerator and brake pedals was recorded as numbers ranging from 0 (not pressed) to 1 (fully pressed). 
 The angle of the steering wheel was recorded as a number ranging from -1 (left) to 1 (right).
 In order to measure lane centering, the position and orientation of the participant's car were recorded as [measure]. 
-Finally, the speed of the participant's car was recorded along with the occurring speed signs to calculate \(n\)-back task performance. 
+Finally, the speed of the participant's car was recorded along with the occurring speed signs to calculate \nback task performance. 
 
 The eye-tracker recorded a number of raw variables at a rate of 500 Hz, two of which are relevant for the current study.
 Eye positions are measured in \(x\) and \(y\) coordinates relative to the PC monitor (\(1920 \times 1080\) px).
@@ -92,7 +92,7 @@ The mean pupil size during this 5 second interval was used to correct the pupil 
 More specifically we have chosen to use subtractive baseline correction (\(corrected\ pupil\ size = pupil\ size - baseline\)) 
 as \citet{Mathot2018} prefer it over divisive baseline correction (\(corrected\ pupil\ size = pupil\ size / baseline\)).
 
-The analysis of fixations on the speedometer required some preprocessing as well.
+The analysis of fixations on the speedometer required some preprocessing too.
 On the surface it seems fairly simple to define the speedometer as an area of interest (AOI) and count the number of fixations within that area.
 Yet, shifts in eye positions between and within participants made it impossible to universally define the bounds of this AOI.\@
 For this reason we manually determined the borders of the AOI for each participant, i.e.\ determined what ``counts as'' a fixation on the speedometer.
