@@ -26,34 +26,48 @@ An important facet of this is adaptive automation based on the human factor of m
 An intelligent car that counteracts the negative effects of a high cognitive load on driving performance can greatly benefit the driver's safety.
 
 % cognitive load
+We must first ask what the concept of cognitive load means.
+Let us define cognitive load as \textit{the level of perceived cognitive effort when performing a task}.
+Two elements to cognitive load are most important in the context of driving: central and visual demands \citep{DeWaard1996}. 
+
+% explain WML as factor to cognitive load
+Central demands have to do with working memory load.
+In driving, working memory plays an important role in remaining focused on the task at hand, i.e.\ maintaining cognitive control \citep{Wood2016}.
+It is also important in maintaining task goals, whether high-level (e.g.\ planning a route) or low-level (e.g.\ planning an overtaking manoeuvre).
+
+% explain visuospatial demands factor to cognitive load
+The task of driving has some intricate visual demands as well.
+Visuospatial attention is required to process the movement of objects in traffic such as cars, pedestrians and traffic signs \citep{Zheng2020}.
+This is a reflected by a number of studies on road accidents, linking reduced visuospatial attentional abilities (due to for example old age) to deteriorating driving performance (for a review see \citet{Owsley2010}).
+In practice, the requirement of visuospatial attention means that drivers must continuously scan their environment since criticial visual events can occur anywhere at any time.
+
+% measuring cognitive load
 In order to develop a system that adapts to the driver's cognitive load it is essential to find a robust method of measuring cognitive load.
-Let us first define cognitive load as ``the level of perceived effort for learning, thinking and reasoning as an indicator of pressure on working memory'' \citep[p.~302]{Haapalainen2010}.
-Changes in an individual's cognitive load have an effect on a number of physiological measures including heart rate variability, brainwave levels (as measured by an electroencephalogram; EEG), skin galvanic response and pupillary response \citep{Haapalainen2010}.
-The current study focuses on the latter as a possible predictor for cognitive load.
-
-
+Changes in an individual's cognitive load are reflected by a number of physiological measures including heart rate variability, brainwave levels (as measured by an electroencephalogram; EEG), skin galvanic response and pupillary response \citep{Haapalainen2010}.
+The current study focuses on the pupillary response as a possible predictor for cognitive load.
 
 % ----- RESEARCH QUESTIONS -----
-This study aims to investigate three questions concerning eye-tracking measurements and working memory load (WML) while driving.
-\textbf{(1)} Can the current level of WML be predicted by pupil dilation?
+This study aims to investigate three questions concerning eye-tracking measurements and cognitive load while driving.
+\textbf{(1)} Can the current level of working memory load (WML) be predicted by pupil dilation?
 \textbf{(2)} Is there an interaction between WML and visuospatial demands on pupil dilation?
-\textbf{(3)} Does the frequency of fixations on the speedometer correlate with the current level of mental effort, i.e.\@ WML and visuospatial demands?
-Below we will state our hypotheses for these questions. 
+\textbf{(3)} Does the frequency of fixations on the speedometer correlate with the current level of cognitive load?
+Below we will state and explain our hypotheses for these questions. 
 
 % ----- HYPOTHESES -----
 Firstly, \citet{Palinko2010} expect that pupillometry can provide a viable estimation for cognitive load while driving. 
-More specifically they suggest a positive correlation between pupil dilation and cognitive load.
+More specifically, they suggest a positive correlation between pupil dilation and working memory load.
 We therefore hypothesize that the current level of WML can be predicted by pupil dilation.
 
 Secondly, results by \citet{Scheunemann2019} suggest an interaction between WML and visuospatial demands at the brain level. 
 They conducted a driving experiment with functional near-infrared spectroscopy (fNIRS).
-Results showed that the WML level had a significant influence on the change in activation patterns in the brain associated with an increase in visuospatial demands.
+Results showed that the level of WML had a significant influence on the change in activation patterns in the brain associated with an increase in visuospatial demands.
 This interaction effect is expected to be reflected in pupil dilation as well.
 
 Thirdly, a hypothesized negative correlation between mental effort and fixations on the speedometer follows from the notion of limited cognitive resources (as described by \citet{DeWaard1996}).
 For example, an easy driving task requires little cognitive resources to be spent.
 This then leaves plenty of cognitive resources for checking the speedometer.
-In contrast, a driving task that is highly demanding (either visuospatially or mnemonically) allows little ``mental space'' to concern oneself with the speedometer.
+In contrast, a driving task with high visuospatial or central demands allows little ``mental space'' to concern oneself with the speedometer.
+Findings by \citep{Salvucci2011} support this claim, suggesting that drivers perform less control updates (such as checking the speedometer) when engaging in a demanding secondary task.
 
 % OPERATIONALISATION
 In order to test these three hypotheses a simulated driving experiment was conducted.
@@ -68,4 +82,4 @@ The task was integrated into the driving process by means of speed regulation, m
 Visuospatial demands were manipulated by contrasting two driving environments: \textit{construction} and \textit{non-construction}.
 In the non-construction condition participants drove on a regular three-lane highway.
 In the construction condition the leftmost lane was closed off by a continuous row of pylons.
-Further, the remaining two lanes were of reduced width, increasing driving difficulty.
+Further, the remaining two lanes were of reduced width, which increases driving difficulty \citep{Liu2016}.
