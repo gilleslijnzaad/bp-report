@@ -27,11 +27,11 @@ An intelligent car that counteracts the negative effects of a high cognitive loa
 
 % cognitive load
 We must first ask what the concept of cognitive load means.
-Let us define cognitive load as \textit{the level of perceived cognitive effort when performing a task}.
-Two elements to cognitive load are most important in the context of driving: central and visual demands \citep{DeWaard1996}. 
+Let us define cognitive load as the level of perceived cognitive effort when performing a task.
+Two elements to cognitive load are most important in the context of driving: \textit{central} and \textit{visual} demands \citep{DeWaard1996}. 
 
 % explain WML as factor to cognitive load
-Central demands have to do with working memory load.
+Central demands have to do with working memory load (WML).
 In driving, working memory plays an important role in remaining focused on the task at hand, i.e.\ maintaining cognitive control \citep{Wood2016}.
 It is also important in maintaining task goals, whether high-level (e.g.\ planning a route) or low-level (e.g.\ planning an overtaking manoeuvre).
 
@@ -41,42 +41,30 @@ Visuospatial attention is required to process the movement of objects in traffic
 This is a reflected by a number of studies on road accidents, linking reduced visuospatial attentional abilities (due to for example old age) to deteriorating driving performance [for a review see \citet{Owsley2010}].
 In practice, the requirement of visuospatial attention means that drivers must continuously scan their environment since criticial visual events can occur anywhere at any time.
 
-% measuring cognitive load
+% cognitive load + pupil size: RQ and hypothesis
 In order to develop a system that adapts to the driver's cognitive load it is essential to find a robust method of measuring cognitive load.
 Changes in an individual's cognitive load are reflected by a number of physiological measures including heart rate variability, brainwave levels (as measured by an electroencephalogram; EEG), skin galvanic response and pupillary response \citep{Haapalainen2010}.
-The current study focuses on the pupillary response as a possible predictor for cognitive load.
+The current study focuses on the latter as a predictor for cognitive load. We attempt to find whether the current level of cognitive load, defined as a combination of working memory load and visuospatial demands, can be predicted by pupil size.
 
-We are also interested in the effect of cognitive load on speed-keeping.
+Following results by \citet{Palinko2010} we expect that pupillometry can provide a viable estimation for cognitive load while driving. 
+Furthermore, results by \citet{Scheunemann2019} suggest an interaction between central and visual demands during driving at the brain level.
+This interaction effect between the two components of cognitive load is expected to be reflected in pupil size.
+
+% cognitive load + speed-keeping: RQ and hypothesis
+Additionally, we are interested in the effect of cognitive load on speed-keeping.
 A relationship between cognitive load and speed-keeping performance would reveal that speed-keeping is a necessary application of adaptive automation. 
 In other words, if a high cognitive load leads to diminished speed-keeping performance, then adaptive automation should aid the driver with keeping their speed.
-In this study we will use eye fixations on the speedometer as a measure of speed-keeping efforts. 
+In this study we will use eye fixations on the speedometer as a measure of speed-keeping efforts. We therefore ask whether the number of eye fixations on the speedometer correlates with the current level of cognitive load.
 
-% ----- RESEARCH QUESTIONS -----
-This study aims to investigate three questions concerning eye-tracking measurements and cognitive load while driving.
-\textbf{(1)} Can the current level of working memory load (WML) be predicted by pupil size?
-\textbf{(2)} Is there an interaction between WML and visuospatial demands on pupil size?
-\textbf{(3)} Does the number of eye fixations on the speedometer correlate with the current level of cognitive load?
-Below we will state and explain our hypotheses for these questions. 
-
-% ----- HYPOTHESES -----
-Firstly, \citet{Palinko2010} expect that pupillometry can provide a viable estimation for cognitive load while driving. 
-More specifically, they suggest a positive correlation between cognitive load and pupil size.
-We therefore hypothesize that the current level of WML can be predicted by pupil size.
-
-Secondly, results by \citet{Scheunemann2019} suggest an interaction between WML and visuospatial demands at the brain level. 
-They conducted a driving experiment with functional near-infrared spectroscopy (fNIRS).
-Results showed that the level of WML had a significant influence on the change in activation patterns in the brain associated with an increase in visuospatial demands.
-This interaction effect is expected to be reflected in pupil size as well.
-
-Thirdly, a hypothesized negative correlation between mental effort and fixations on the speedometer follows from the notion of limited cognitive resources (as described by \citet{DeWaard1996}).
+Based on the notion of limited cognitive resources (as described by \citet{DeWaard1996}) we expect there to be negative correlation between cognitive load and fixations on the speedometer.
 For example, an easy driving task requires little cognitive resources to be spent.
 This then leaves plenty of cognitive resources for checking the speedometer.
 In contrast, a driving task with high visuospatial or central demands allows little ``mental space'' to concern oneself with the speedometer.
 Findings by \citet{Salvucci2011} support this claim, suggesting that drivers perform less control updates (such as checking the speedometer) when engaging in a demanding secondary task.
 
 % OPERATIONALISATION
-In order to test these three hypotheses a simulated-driving experiment was conducted.
-It largely follows the approach of \citet{Scheunemann2019} who studied the interaction between WML and visuospatial demands while driving.
+In order to test these two hypotheses a simulated-driving experiment with eye-tracking was conducted in which central and visual demands were manipulated separately.
+It largely follows the approach of \citet{Scheunemann2019} who studied the interaction between working memory load (WML) and visuospatial demands while driving.
 Their experiment involved participants driving a car on a highway in a realistic simulation. 
 
 % working memory load
