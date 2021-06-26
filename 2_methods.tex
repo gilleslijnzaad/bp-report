@@ -1,15 +1,34 @@
 % !TEX root = thesis.tex
 
 \section{Methods}\label{sec:methods}
+\begin{figure*}[tp]
+  \centering
+  \includegraphics[width=\textwidth]{images/screenshot_noncon_blinker.pdf}
+  \caption{The driving simulation for the non-construction condition.
+  The orange arrow on the left of the dashboard is the indicator that blinks three times once the participant presses the blinker.
+  The number at the center of the dashboard shows the current driving speed. 
+  At the top and on both sides of the screen are mirrors in which the participant can see the autocar when it is behind them.}
+  \label{fig:screenshot_noncon}
+\end{figure*}
 
 \subsection{Participants}
-A total of 38 volunteers (23 male, 12 female, 3 other) aged 20--36 (\(M = 23.1 \pm 3.0\)) participated in this experiment. 
+A total of 38 volunteers (23 male, 12 female, 3 other/undisclosed) aged 20--36 (\(M = 23.1 \pm 3.0\)) participated in this experiment. 
 They all had a driver's license, on average for 4.5 years (\(\pm\ 3.1\)).
 All participants signed an informed consent form prior to the experiment and were compensated 12 euros for their participation.
 
+From the 38 individuals that participated in this experiment 16 were excluded from data analysis altogether.
+8 participants were excluded because their driving behavior was not indicative of an actual attempt to perform the task.
+8 additional participants were excluded due to an error in the experiment, leading to the trials being too short.
+This altered the task considerably and therefore we cannot compare the behavior of these participants to others.
+Thus, task error was determined for 22 participants (see \citealp{DeMooij2021}). 
+
+For eye-tracking analysis specifically, 6 more participants were excluded as their eye-tracking data were incomplete. 
+This leaves us with 16 participants for eye-tracking analysis.
+Finally, for the analysis of lane deviation (see \citealp{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 7 participants for analysis.
+
 \subsection{Materials}
 % equipment
-Participants interacted with the driving simulation using a steering wheel with blinkers and a throttle and brake pedal (Driving Force GT, Logitech, Lausanne, Switzerland). 
+Participants interacted with the driving simulation using a steering wheel with indicators and a throttle and brake pedal (Driving Force GT, Logitech, Lausanne, Switzerland). 
 The steering wheel was secured to the table in front of the screen and remained in the same location for all participants. 
 The pedals were placed on the floor such that participants could move it closer or further depending on their level of comfort. 
 An eye-tracking camera (EyeLink Portable Duo, SR Research, Missisauga, Canada), placed between the screen and the steering wheel, was used to continuously record the eye movements and pupil size of participants. 
@@ -17,11 +36,20 @@ The method of tracking that we employed was remote tracking using a target stick
 This method was chosen because stabilizing the head using a head rest was not feasible considering the set-up with the steering wheel.
 
 % environment
-The simulated environment of the experiment consisted of a straight three-lane highway, as shown in Figure~\ref{fig:screenshot_noncon} (see Appendix).
+The simulated environment of the experiment consisted of a straight three-lane highway, as shown in Figure~\ref{fig:screenshot_noncon}.
 The features of the environment were minimal. 
 Either side of the road was coloured green, signifying grass. 
-Traffic consisted of a single other car on the highway, represented by a blue rectangle.
-This car would stick to traffic rules such as overtaking from the left, staying on the right lane as much as possible, and following the current speed limit. 
+Traffic consisted of a single other car on the highway, referred to as the \textit{autocar} and represented by a blue rectangle.
+The autocar would stick to traffic rules such as overtaking from the left, staying on the right lane as much as possible, and following the current speed limit. 
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/screenshot_con.pdf}
+  \caption{The driving simulation for the construction condition. 
+  The leftmost lane is closed off by a row of pylons and the remaining lanes are more narrow than in the non-construction condition. 
+  The autocar can be seen next to the speed sign.}
+  \label{fig:screenshot_con}
+\end{figure*}
 
 % car itself
 The bottom of the screen was filled by a black dashboard. 
@@ -31,48 +59,49 @@ The simulation had three rear-view mirrors: one on the top, one on the left, and
 The autocar was visible in the corresponding mirrors depending on the distance from the car. 
 
 % construction
-In the construction condition the leftmost lane is closed off by a row of pylons as shown in Figure~\ref{fig:screenshot_con} (see Appendix). 
+In the construction condition the leftmost lane is closed off by a row of pylons as shown in Figure~\ref{fig:screenshot_con}. 
 The lanes were separated by a full yellow line and were narrower than in the non-construction condition. 
 
 % speed signs
 Speed signs that passed were identical to general speed signs in The Netherlands: black digits enclosed by a red circle. 
 
 % n-back task
-Within each trial the participants were presented with at least nine speed signs at intervals of 20 seconds. 
-The first speed sign appeared at 5 seconds.
-For \nback tasks with \(n \geq 1\), there was a so-called ``build-up phase'' of \(n\) speed signs during which the participant did not need to regulate their speed yet. 
-For example, for \(n = 4\), the build-up phase would be the first four speed signs. 
-The speed regulating task, so the actual \nback task, would start after this build-up phase. 
-Due to a difference in length of build-up phases per \nback trial, each trial differed in number of speed signs as well as duration.
-For a schematic overview of the \nback task, see Figure~\ref{fig:nback_scheme}.
+The \nback task that participants performed during driving is illustrated best by an example from \citet{Unni2017} as shown in Figure~\ref{fig:nback_scheme}, which they explain as follows.
+In this scenario the participant is about to pass the 80 km/h speed sign and the previous four speed signs were as shown in the schematic. 
+For the corresponding \textit{n}-back task, participants had to memorize the last \textit{n} speed signs and drive at the \textit{n}th speed sign which occurred previously.
+For example, at 1-back, the participant’s target speed is the previous sign (140 km/h) and has to keep the current speed sign in memory (80 km/h).
 
 \begin{figure}
   \centering
   \includegraphics[width=7cm]{images/nback_Scheunemann.pdf}
-  \caption{Example of \textit{n}-back experimental paradigm to manipulate working memory load. 
-  (A) Consider a scenario where the participant is about to pass the 80 km/h speed sign and the previous four speed signs were as shown in the schematic.
-  (B) For the corresponding \textit{n}-back task, participants had to memorize the last \textit{n} speed signs and drive at the \textit{n}th speed sign which occurred previously.
-  For example, at 1-back, the participant’s target speed is the previous sign (140 km/h) and has to keep the current speed sign in memory (80 km/h).
-  Figure taken from \citet{Unni2017}, caption adapted from \citet{Scheunemann2019}.}
+  \caption{Example of \textit{n}-back experimental paradigm to manipulate working memory load. From \citet{Unni2017}.}
   \label{fig:nback_scheme}
 \end{figure}
 
+A trial consisted of the participants performing the speed-regulating task for nine speed signs. 
+They appeared at intervals of 20 seconds, with the first speed sign being passed at 5 seconds.
+For \nback tasks with \(n \geq 1\) there was a so-called ``build-up phase'' of \(n\) speed signs during which the participant did not need to regulate their speed yet. 
+For example, for \(n = 4\), the build-up phase would be the first four speed signs. 
+They would then have to start the speed-regulating task at the fifth speed sign.
+Because of this build-up phase, the \nback trials differed in number of speed signs shown and therefore in duration.
+
 \subsection{Experimental Procedure}
-The experiment consisted of 20 trials in total, divided into two blocks of 10 trials each. 
-The participant could take a break in between these blocks.
-Within a block, each \nback trial appeared twice: once with a construction site and once without. 
+There are 10 unique combinations of \nback level and construction condition.
+Each of these combinations was performed twice, resulting in a total number of 20 trials.
+These were divided into two blocks of 10 trials with a short break in between.
+
 The order of the trials was determined pseudorandomly with a few conditions. 
 Firstly, no \nback level could appear twice in a row. 
 Secondly, the construction/non-construction conditions were alternated from trial to trial. 
-These constraints on the randomization were incorporated with the aim of avoiding habituation effects for the memory task and the visuospatial demands. 
-Finally, the order of the trials in the first block was reversed to form the order of trials in the second block.
+Thirdly, the order of the trials in the first block was reversed to form the order of trials in the second block.
+These constraints on the randomization were incorporated with the aim of avoiding habituation effects for the memory task and the visuospatial demands.
 
 Prior to performing the experiment the participant was given instructions about the driving and the memory task. 
 They then performed a practice round (one 2-back trial with no construction and a total of 5 speed signs) to get accustomed to the simulation and the steering wheel. 
 Next, the eye-tracker was calibrated. 
 This involved the participant following a target around the computer screen with their eyes. 
 This procedure was repeated twice: once to calibrate and once to validate whether that calibration was accurate. 
-If validation was inaccurate, calibration was performed again.
+If validation was inaccurate, calibration was repeated.
 
 After calibration, the experiment began. 
 Every trial (excluding the very first one) was preceded by an eye-tracking drift correction. 
@@ -100,20 +129,18 @@ The eye-tracker recorded only one eye (specifically the left) as this is most co
 All analyses were conducted using the R programming language \citep{R}.
 
 The raw eye-tracking data were sorted into fixations, saccades and blinks using the \texttt{eyelinker} R package \citep{eyelinker}.
-Only the fixations were used for data analysis as this eliminated a lot of noise and reduced the amount of data by around 99\%, making it much more workable.
-For both variables of interest discussed in the introduction (pupil size and fixations on the speedometer) some preprocessing was required.
+Only the fixations were used for data analysis as these are the most reliable measurements of both pupil size and fixation location.
 
 To properly compare pupil size within and between participants, baseline correction is required. 
 According to \citet{Mathot2018} baseline correction increases statistical power by accounting for random fluctuations in pupil size over the course of an experiment.
-To this end the baseline pupil size is recalculated for each new trial.
+To this end, the baseline pupil size is recalculated for each new trial.
 As a baseline period we chose the time period between the start of the trial and the appearance of the first speed sign.
 The mean pupil size during this 5 second interval was used to correct the pupil sizes of the trial.
 The specific method of baseline correction that we used is subtractive baseline correction (\(corrected\ pupil\ size = pupil\ size - baseline\)) 
 as \citet{Mathot2018} prefer it over divisive baseline correction (\(corrected\ pupil\ size = pupil\ size / baseline\)).
 
-The analysis of fixations on the speedometer required some preprocessing too.
-On the surface it seems fairly simple to define the speedometer as an area of interest (AOI) and count the number of fixations within that area.
-However, shifts in eye positions between and within participants made it impossible to universally define the bounds of this AOI.\@
+In order to analyze fixations on the speedometer it must be defined as an area of interest (AOI).
+The bounds of this AOI could not be universally defined, as the measurement of eye-positions shifted between and within participants.
 For this reason we manually determined the borders of the AOI for each participant, i.e.\ determined what ``counts as'' a fixation on the speedometer.
 Fixations on the speedometer will be expressed as a percentage of the total number of fixations during that trial.
 
@@ -122,11 +149,3 @@ Pupil size will be examined both between and within trials.
 These two temporal contexts will provide a detailed image of how a participant's pupil size changes over time.
 Fixations on the speedometer will be examined between trials. 
 In order to test the significance of the results we will use an ANOVA with repeated measures.
-
-From the 38 individuals that participated in this experiment a number were excluded from data analysis.
-5 participants were excluded from the entire experiment because their driving behavior was not indicative of an actual attempt to perform the task.
-This was determined by their error rate on the 0-back task, which we expect to approximate zero.
-Therefore the analysis of task error (see \citealp{DeMooij2021}) was performed for 33 participants.
-For eye-tracking analysis 8 more participants were excluded as their eye-tracking data were either non-existent or incomplete.
-This leaves us with 25 participants for eye-tracking analysis.
-Finally, for the analysis of lane deviation (see \citealp{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 18 participants for analysis.
