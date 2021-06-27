@@ -1,32 +1,6 @@
 % !TEX root = thesis.tex
 
 \section{Results}\label{sec:results}
-\begin{figure*}
-  \centering
-  \begin{subfigure}[b]{0.3\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{images/error_rates.pdf}
-    \caption{Errors on the \textit{n}-back task (\textit{n}\ =\ 22). From \citet{DeMooij2021}.}
-    \label{fig:errors}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{0.3\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{images/lane_deviation.pdf}
-    \caption{Lane deviation (\textit{n}\ =\ 22). From \citet{Kelapanda2021}.}
-    \label{fig:lane-deviation}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{0.3\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{images/steering_reversal.pdf}
-    \caption{Steering reversal rate (\textit{n}\ =\ 7). From \citet{Kelapanda2021}.}
-    \label{fig:steering-reversal}
-  \end{subfigure}
-     \caption{Performance measures; bars represent standard error.}
-     \label{fig:performance}
-\end{figure*}
-
 \subsection{Participants}
 From the 38 individuals that participated in this experiment 16 were excluded from data analysis altogether.
 8 participants were excluded because their driving behavior was not indicative of an actual attempt to perform the task.
@@ -39,6 +13,32 @@ This leaves us with 16 participants for eye-tracking analysis.
 Finally, for the analysis of steer reversal rate (see \citealp{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 7 participants for analysis.
 
 \subsection{Driving performance}
+\begin{figure*}
+  \centering
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/error_rates.pdf}
+    \caption{Errors on the \textit{n}-back task (\textit{N}\ =\ 22). From \citet{DeMooij2021}.}
+    \label{fig:errors}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/lane_deviation.pdf}
+    \caption{Lane deviation (\textit{N}\ =\ 22). From \citet{Kelapanda2021}.}
+    \label{fig:lane-deviation}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/steering_reversal.pdf}
+    \caption{Steering reversal rate (\textit{N}\ =\ 7). From \citet{Kelapanda2021}.}
+    \label{fig:steering-reversal}
+  \end{subfigure}
+     \caption{Measures of driving performance. Bars represent standard error.}
+     \label{fig:performance}
+\end{figure*}
+
 Let us first examine performance on the working memory task.
 Figure~\ref{fig:errors} shows a positive correlation between \nback level and the proportion of errors,
 confirming that the \nback task indeed gets more difficult with increasing \(n\). 
@@ -56,28 +56,34 @@ No significant effect of \nback level is found.
 Our findings on lane deviation and steering reversals can be summarized as a negative correlation between visuospatial demands and driving performance.
 
 \subsection{Pupil size}
-Figure~\ref{fig:ps-speed-sign} shows how the pupil size of participants changed within a trial.
-There is a visible distinction between change in pupil size for low \nback levels (\(n = 0,1,2\)) and high \nback levels (\(n = 3,4\)):
-whereas high \nback levels show a peak in pupil size, low \nback levels show a decline from the start of the task.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=7.5cm]{images/speed_sign_nback.pdf}
-  \caption{Mean pupil size over the period between the appearance of two speed signs (\textit{n}\ =\ 16).
-  The dashed vertical line indicates the moment that participants need to start regulating their speed according to the speed signs.}
-  \label{fig:ps-speed-sign}
-\end{figure}
-
-Figure~\ref{fig:mean-ps} shows the mean pupil size over an entire trial. 
+Figure~\ref{fig:mean-ps} shows the mean pupil size over a trial. 
 There seems to be a correlation between \nback level and pupil size.
 A two-way ANOVA with repeated measures confirms this effect of working memory load (WML) on pupil size [\(F(4,135)=3.09,\ p=.018\)].
-However, no effect of visuospatial demands [\(F(1,135)=1.88,\ p=.17\)] or interaction between WML and visuospatial demands [\(F(4,135)=0.40,\ p=.81\)] is found.
+No significant effect of visuospatial demands [\(F(1,135)=1.88,\ p=.17\)] or interaction between WML and visuospatial demands [\(F(4,135)=0.40,\ p=.81\)] is found.
 
 \begin{figure}
   \centering
   \includegraphics[width=7.5cm]{images/pupil_size_interaction.pdf}
-  \caption{Mean pupil size during trial (\textit{n}\ =\ 16); bars represent standard error.}
+  \caption{Mean pupil size during trial (\textit{N}\ =\ 16); bars represent standard error.}
   \label{fig:mean-ps}
+\end{figure}
+
+Figure~\ref{fig:ps-speed-sign} shows how the pupil size of participants changed within a trial.
+It is immediately noticeable that pupil size starts at a value of 0 for all \nback levels.
+This follows from our definition of the baseline period as the first 5 seconds of a trial and our use of subtractive baseline correction.
+
+Looking at the changes in pupil size for \(n = 0,1\) we see a nearly continuous decrease in pupil size over the trial, indicating a low cognitive load.
+In contrast, \(n=3,4\) show a larger pupil size, suggesting higher cognitive load.
+Interestingly, for \(n=4\) we see a steady decrease in pupil size from the start of the \nback task. 
+This implies that cognitive load decreases after the start of the 4-back task, which could be explained by the participant abandoning the task because of its difficulty. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=7.5cm]{images/speed_sign_nback.pdf}
+  \caption{Mean pupil size over the period between the appearance of two speed signs (\textit{N}\ =\ 16).
+  The 5 seconds between the start of the block and the passing of the first speed sign (the baseline period) is defined as speed sign number 0\ --\ \textit{n}.
+  The dashed vertical line indicates the end of the build-up phase, i.e.\ the start of the speed regulating task.}
+  \label{fig:ps-speed-sign}
 \end{figure}
 
 \subsection{Fixations on speedometer}
@@ -88,6 +94,6 @@ There is no effect of construction [\(F(1,135)=0.03,\ p=0.86\)] or interaction b
 \begin{figure}
   \centering
   \includegraphics[width=7.5cm]{images/speedometer_interaction.pdf}
-  \caption{Number of fixations on the speedometer as a percentage of the total number of fixations for that trial (\textit{n}\ =\ 16); bars represent standard error.}
+  \caption{Number of fixations on the speedometer as a percentage of the total number of fixations for that trial (\textit{N}\ =\ 16); bars represent standard error.}
   \label{fig:fix-speedometer}
 \end{figure}
