@@ -1,60 +1,77 @@
 % !TEX root = thesis.tex
 
 \section{Results}\label{sec:results}
+\begin{figure*}
+  \centering
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/error_rates.pdf}
+    \caption{Errors on the \textit{n}-back task (\textit{n}\ =\ 22). From \citet{DeMooij2021}.}
+    \label{fig:errors}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/lane_deviation.pdf}
+    \caption{Lane deviation (\textit{n}\ =\ 22). From \citet{Kelapanda2021}.}
+    \label{fig:lane-deviation}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/steering_reversal.pdf}
+    \caption{Steering reversal rate (\textit{n}\ =\ 7). From \citet{Kelapanda2021}.}
+    \label{fig:steering-reversal}
+  \end{subfigure}
+     \caption{Performance measures; bars represent standard error.}
+     \label{fig:performance}
+\end{figure*}
+
 \subsection{Participants}
 From the 38 individuals that participated in this experiment 16 were excluded from data analysis altogether.
 8 participants were excluded because their driving behavior was not indicative of an actual attempt to perform the task.
 8 additional participants were excluded due to an error in the experiment, leading to the trials being too short.
 This altered the task considerably and therefore we cannot compare the behavior of these participants to others.
-Thus, task error was determined for 22 participants (see \citealp{DeMooij2021}). 
+Thus, task error (see \citealp{DeMooij2021}) and lane deviation (see \citealp{Kelapanda2021}) were determined for 22 participants. 
 
 For eye-tracking analysis specifically, 6 more participants were excluded as their eye-tracking data were incomplete. 
 This leaves us with 16 participants for eye-tracking analysis.
-Finally, for the analysis of lane deviation (see \citealp{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 7 participants for analysis.
+Finally, for the analysis of steer reversal rate (see \citealp{Kelapanda2021}) 15 participants were excluded because of missing data, leaving 7 participants for analysis.
 
-\subsection{Driving behavior}
-Figures~\ref{fig:errors} (from \citealp{DeMooij2021}) and~\ref{fig:lane-deviation} (from \citealp{Kelapanda2021}) show behavioral results.
+\subsection{Driving performance}
+Let us first examine performance on the working memory task.
+Figure~\ref{fig:errors} shows a positive correlation between \nback level and the proportion of errors,
+confirming that the \nback task indeed gets more difficult with increasing \(n\). 
+There is no effect of the construction condition, nor an interaction between \nback level and construction on the error rate.
+This suggests that visuospatial demands do not impact performance on the working memory task.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=7.5cm]{images/error_rates.pdf}
-  \caption{Errors on the \textit{n}-back task (\textit{n}\ =\ 22); bars represent standard error.}
-  \label{fig:errors}
-\end{figure}
+Figure~\ref{fig:lane-deviation} shows the average deviation from the center of the lane.
+While \nback level has no significant influence on lane deviation, there is a significant effect of construction condition.
+These results indicate a positive correlation between visuospatial demands and lane deviation, and no influence of working memory load.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=7.5cm]{images/lane_deviation.pdf}
-  \caption{Lane deviation (\textit{n}\ =\ 22); bars represent standard error.}
-  \label{fig:lane-deviation}
-\end{figure}
+Figure~\ref{fig:steering-reversal} shows the rate of steering reversal.
+We see an increase in steering reversals in the construction condition compared to the non-construction condition.
+No significant effect of \nback level is found.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=7.5cm]{images/steer_reversal.pdf}
-  \caption{Steer reversal (\textit{n}\ =\ 7); bars represent standard error.}
-  \label{fig:steer-reversal}
-\end{figure}
+Our findings on lane deviation and steering reversals can be summarized as a negative correlation between visuospatial demands and driving performance.
 
 \subsection{Pupil size}
 Figure~\ref{fig:ps-speed-sign} shows how the pupil size of participants changed within a trial.
 There is a visible distinction between change in pupil size for low \nback levels (\(n = 0,1,2\)) and high \nback levels (\(n = 3,4\)):
 whereas high \nback levels show a peak in pupil size, low \nback levels show a decline from the start of the task.
-This difference, which can be characterized as an interaction between \nback level and speed sign number on pupil size, is significant according to an ANOVA with repeated measures [\(F(4,2536)=7.42,\ p < .001\)].
 
 \begin{figure}
   \centering
   \includegraphics[width=7.5cm]{images/speed_sign_nback.pdf}
-  \caption{Mean pupil size over the period between the appearance of two speed signs (\textit{n}\ =\ 25).
+  \caption{Mean pupil size over the period between the appearance of two speed signs (\textit{n}\ =\ 16).
   The dashed vertical line indicates the moment that participants need to start regulating their speed according to the speed signs.}
   \label{fig:ps-speed-sign}
 \end{figure}
 
 Figure~\ref{fig:mean-ps} shows the mean pupil size over an entire trial. 
-It suggests that there is no effect of \nback level on pupil size within the non-construction trials.
-For the construction trials there seems to be an increase of pupil size by \nback level more so than for non-construction trials.
-However, this suggested interaction between \nback level and construction on pupil size is not significant [\(F(4,216)=1.50,\ p=.20\)].
-Disregarding the difference between construction and non-construction we do find a marginally significant effect of \nback level on pupil size [\(F(4,221)=2.39,\ p=.052\)].
+There seems to be a correlation between \nback level and pupil size.
+A two-way ANOVA with repeated measures confirms this effect of working memory load (WML) on pupil size [\(F(4,135)=3.09,\ p=.018\)].
+However, no effect of visuospatial demands [\(F(1,135)=1.88,\ p=.17\)] or interaction between WML and visuospatial demands [\(F(4,135)=0.40,\ p=.81\)] is found.
 
 \begin{figure}
   \centering
@@ -65,8 +82,8 @@ Disregarding the difference between construction and non-construction we do find
 
 \subsection{Fixations on speedometer}
 Figure~\ref{fig:fix-speedometer} shows the number of fixations on the speedometer as a percentage of the total number of fixations for a trial.
-Like this figure suggests, there is a significant negative correlation between \nback level and fixations on the speedometer [\(F(4,221)=84.72,\ p<.001\)] 
-and no effect of construction an interaction between \nback and construction. 
+Like this figure suggests, there is a significant negative correlation between \nback level and fixations on the speedometer [\(F(4,135)=51.55,\ p<.001\)].
+There is no effect of construction [\(F(1,135)=0.03,\ p=0.86\)] or interaction between \nback level and construction [\(F(4,135)=0.085,\ p=0.99\)]. 
 
 \begin{figure}
   \centering
