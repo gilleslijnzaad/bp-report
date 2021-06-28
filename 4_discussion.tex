@@ -1,47 +1,45 @@
 % !TEX root = thesis.tex
 
 \section{Discussion}\label{sec:discussion}
-In this study we sought to answer two questions related to cognitive load while driving by means of an eye-tracking experiment.
+In this study we sought to answer three questions related to cognitive load while driving by means of an eye-tracking experiment.
 Firstly, can the current level of cognitive load be predicted by pupil size? 
-And secondly, does the frequency of fixations on the speedometer correlate with the current level of cognitive load?
+Secondly, does the frequency of fixations on the speedometer correlate with the current level of cognitive load?
+And thirdly, what is the influence of cognitive load on driving performance?
 Below you will find our conclusions based on the results of the experiment.
 
-Let us first consider the effect of working memory load (WML) on pupil size.
-Within trials we found a significant effect of WML and speed sign number on pupil size (see Figure~\ref{fig:ps-speed-sign}).
-Most notably we see a contrast between pupil size for low \nback levels (\(n = 0,1,2\)) and high \nback levels (\(n = 3,4\)). 
-This contrast between low- and high-level \nback levels is also reflected in task error (see Figure~?, Milan's task error plot). 
+First consider the effect of working memory load (WML) on pupil size.
+Between trials we found an effect of WML on pupil size. 
+However, the same cannot be said for visuospatial demands. 
+Our results therefore suggest that pupil size is a predictor for WML, but not for visuospatial demands.
 
-Interestingly, compared to \(n = 3\) the peak in pupil size for \(n = 4\) is higher but shows a sharper decline afterwards.
-An explanation for this could be that participants focus their attention on the task at first (causing their pupil to dilate), but then quickly abandon the task because of its difficulty, resulting in a contraction of the pupil.
+Interestingly, Figure~\ref{fig:ps-speed-sign} shows a decline in pupil size for \(n=4\) after the start of the \nback task.
+We suggest the following explanation.
+While participants focus their attention on the task at first (causing their pupil to dilate), they quickly abandon the task because of its difficulty, resulting in a contraction of the pupil.
+This explanation is supported by \citet{Granholm1996} who found that pupil size declines when an individual is experiencing an overload of working memory.
 
-Between trials we also found a significant effect of WML on pupil size. 
-We therefore conclude that pupil size is a predictor for WML.\@
+Next, results showed that the number of fixations on the speedometer decreased by WML.\@
+We conclude that as WML increases, fewer cognitive resources are available for speed checking.
+This is in line with findings on the effect of secondary tasks on control updates during driving, as described by \citet{Salvucci2011}.
+In this context we again see no influence of visuospatial demands, suggesting that only WML affects speed-keeping efforts.
 
-However, the same cannot be said for visuospatial demands. No effect of construction condition on pupil size was found, and the expected interaction between WML and visuospatial demands on pupil size was not significant.
-Our results therefore suggest that visuospatial demands have little influence on pupil size.
-One could take this to mean that changes in pupil size \textit{only} reflect working memory load.
-
-Finally, results showed that the amount of fixations on the speedometer decreases linearly by WML.\@
-We conclude that as WML increases, fewer cognitive resources are available for performing control updates.
-This could indicate that high WML leads to decreasing speed-keeping efforts.
-In this context we again see little to no influence of visuospatial demands, suggesting that only WML affects speed-keeping efforts.
+Finally, our findings on lane deviation and steering reversals can be summarized as a negative correlation between visuospatial demands and driving performance.
 
 What are then the practical implications of these results? 
 We have established that pupillometry can be used to assess working memory load (WML) during driving, yet reveals little about visuospatial demands on the driver.
-Since a robust measure of cognitive load must embody both central \textit{and} visual demands, our results challenge the utility of pupillometry in the estimation of drivers' cognitive load.
-Further research on the relation between visuospatial demands and pupil size during driving is therefore necessary.
-If our findings are further consolidated, pupil size should no longer be a variable of interest in the development of adaptive driving based on cognitive load.
+It therefore does not suffice as a robust measure of cognitive load.
+Instead, it could be used in combination with a measure of visuospatial demands.
+Further research is necessary to find a measure of visuospatial demands during driving and validate its use in combination with pupillometry.
 
 Moreover, the confirmed correlation between WML and speed-keeping efforts highlights speed-keeping as a topic of interest in the field of adaptive automation.
-It is important to then first investigate the relationship between speed-keeping efforts and actual performance.
+It is important to note that in this experiment, speed-keeping and the \nback task were closely related.
+Our conclusion can therefore not be extended immediately to ``regular'' speed-keeping. 
+Rather, it should be evaluated by an experiment in which the memory task and speed-keeping are separated.
+
+Lastly, the correlation between vi suospatial demands and both lane deviation and steering reversals suggests that these two measures are of interest to adaptive automation as well.
 
 There are some limitations to this study. 
-Firstly, for 10 of the 38 participants, trials were shorter than they should have been due to an error in the simulation program.
-More specifically, only 9 speed signs were shown for all trials. 
-This is the correct number of signs for only the 0-back task.
-For all other \nback levels there were \(n\) signs too little. 
-This is especially important for the 4-back, where the time spent performing the speed regulation task is essentially halved.
-These 10 participants only performed 82\% of the entire experiment.
-This problem diminishes the statistical power of our results somewhat.
-
-[I cannot think of any more limitations. Maybe we can discuss it in our meeting this Tuesday.]
+Firstly, the driving set-up consisted of only a computer screen and a steering wheel with pedals as used in video games, making it a low-fidelity simulation \citep{Knappe2007}. 
+Secondly, the simulation itself was quite simplistic with concurrent traffic being limited to one car.
+These two factors decrease the statistical power of our results, and future research should seek to employ realistic, high-fidelity simulations.
+Thirdly, the modified \nback task has not been confirmed to be a measure of working memory load like the classic \nback has.
+The most notable difference between them is something.
