@@ -1,16 +1,16 @@
 % !TEX root = thesis.tex
-
-\section{Methods}\label{sec:methods}
-\begin{figure*}[tp]
+\renewcommand{\thefigure}{2.1}
+\begin{figure*}
   \centering
   \includegraphics[width=\textwidth]{images/screenshot_noncon_blinker.pdf}
   \caption{The driving simulation for the non-construction condition.
-  The orange arrow on the left of the dashboard is the indicator that blinks three times once the participant presses the blinker.
+  The orange arrow on the left of the dashboard is the indicator that blinks three times once the participant presses the indicator.
   The number at the center of the dashboard shows the current driving speed. 
   At the top and on both sides of the screen are mirrors in which the participant can see the autocar when it is behind them.}
   \label{fig:screenshot_noncon}
 \end{figure*}
 
+\section{Methods}\label{sec:methods}
 \subsection{Participants}
 A total of 38 volunteers (23 male, 12 female, 3 other/undisclosed) aged 20--36 (\(M = 23.1 \pm 3.0\)) participated in this experiment. 
 They all had a driver's license, on average for 4.5 years (\(\pm\ 3.1\)).
@@ -32,6 +32,7 @@ Either side of the road was coloured green, signifying grass.
 Traffic consisted of a single other car on the highway, referred to as the \textit{autocar} and represented by a blue rectangle.
 The autocar would stick to traffic rules such as overtaking from the left, staying on the right lane as much as possible, and following the current speed limit. 
 
+\renewcommand{\thefigure}{2.2}
 \begin{figure*}
   \centering
   \includegraphics[width=\textwidth]{images/screenshot_con.pdf}
@@ -61,10 +62,11 @@ In this scenario the participant is about to pass the 80 km/h speed sign and the
 For the corresponding \textit{n}-back task, participants had to memorize the last \textit{n} speed signs and drive at the \textit{n}th speed sign which occurred previously.
 For example, at 1-back, the participant’s target speed is the previous sign (140 km/h) and has to keep the current speed sign in memory (80 km/h).
 
+\renewcommand{\thefigure}{2.3}
 \begin{figure}
   \centering
   \includegraphics[width=7cm]{images/nback_Scheunemann.pdf}
-  \caption{Example of \textit{n}-back experimental paradigm to manipulate working memory load. From \citet{Unni2017}.}
+  \caption{Example of \textit{n}-back experimental paradigm to manipulate working memory load (from \citealp{Unni2017}).}
   \label{fig:nback_scheme}
 \end{figure}
 
@@ -73,7 +75,8 @@ They appeared at intervals of 20 seconds, with the first speed sign being passed
 For \nback tasks with \(n \geq 1\) there was a so-called ``build-up phase'' of \(n\) speed signs during which the participant did not need to regulate their speed yet. 
 For example, for \(n = 4\), the build-up phase would be the first four speed signs. 
 They would then have to start the speed-regulating task at the fifth speed sign.
-Because of this build-up phase, the \nback trials differed in number of speed signs shown and therefore in duration.
+Because of the build-up phase, the \nback trials differed in number of speed signs shown and therefore in duration.
+It is important to note here that the build-up phase is excluded from data analysis since it is not considered a part of the \nback task. 
 
 \subsection{Experimental Procedure}
 There are 10 unique combinations of \nback level and construction condition.
@@ -130,7 +133,7 @@ The specific method of baseline correction that we used is subtractive baseline 
 as \citet{Mathot2018} prefer it over divisive baseline correction (\(corrected\ pupil\ size = pupil\ size / baseline\)).
 
 In order to analyze fixations on the speedometer it must be defined as an area of interest (AOI).
-The bounds of this AOI could not be universally defined, as the measurement of eye-positions shifted between and within participants.
+The bounds of this AOI could not be universally defined since the measurement of eye-positions shifted between and within participants.
 For this reason we manually determined the borders of the AOI for each participant, i.e.\ determined what ``counts as'' a fixation on the speedometer.
 Fixations on the speedometer will be expressed as a percentage of the total number of fixations during that trial.
 
@@ -138,4 +141,4 @@ We will focus on three measures relating to the two variables of interest.
 Pupil size will be examined both between and within trials.
 These two temporal contexts will provide a detailed image of how a participant's pupil size changes over time.
 Fixations on the speedometer will be examined between trials. 
-In order to test the significance of the results we will use an ANOVA with repeated measures.
+In order to test the significance of the results we will use a two-way ANOVA with repeated measures, with \nback level and construction/non-construction as independent variables.
